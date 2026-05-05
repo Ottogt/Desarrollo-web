@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-main {
+  padding: 0 1rem 2rem;
+}
+
+.tasks-column {
+  @media (max-width: 767.98px) {
+    padding-top: 5rem;
+  }
+}
+
+.tasks-scroll {
+  max-height: 90vh;
+  overflow-y: auto;
+}
