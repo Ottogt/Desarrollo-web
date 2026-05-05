@@ -10,8 +10,9 @@ Aplicación web de maquetación para el control de **tareas y metas** personales
 ## Instalación
 
 ```bash
-git clone <URL-de-este-repositorio>
-cd clase-bylock
+git clone https://github.com/Ottogt/Desarrollo-web.git
+cd Desarrollo-web
+git checkout semana-1
 npm install
 ```
 
@@ -37,6 +38,10 @@ El comando `preview` sirve localmente la carpeta `dist/` generada por `build`.
 - `src/App.tsx` – Layout principal: navbar, columnas, modal móvil
 - `src/components/` – `Menu`, `Form`, `Item`, `AddMobileButton`
 - `src/styles/_variables.scss` – Variables de color (SASS)
+
+## Repositorio
+
+Código en GitHub: [Ottogt/Desarrollo-web](https://github.com/Ottogt/Desarrollo-web) — rama **`semana-1`** (actividad semana 1).
 
 ## Entrega
 
