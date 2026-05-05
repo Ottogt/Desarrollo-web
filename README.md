@@ -64,6 +64,4 @@ cd backend && cp .env.example .env && npm install && npm run dev
 
 [Ottogt/Desarrollo-web](https://github.com/Ottogt/Desarrollo-web) — ramas **`semana-2`** (React + Zustand) y **`semana-3`** (API Express).
 
-## Entrega
 
-Según indique tu curso: enlace al repositorio y/o plataforma; usar la rama **`semana-2`** para la entrega de la segunda actividad y la rama **`semana-3`** para la entrega de la API de la tercera semana.
