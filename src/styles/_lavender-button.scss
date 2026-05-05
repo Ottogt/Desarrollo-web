@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+// Botón lavanda del diseño (Add Goal, Eliminar, FAB móvil)
+.btn-lavender {
+  background-color: $colorBotonLavanda !important;
+  border: 1px solid $colorBotonLavandaBorde !important;
+  color: $colorTexto !important;
+  font-weight: 500;
+
+  &:hover {
+    filter: brightness(0.94);
+    color: $colorTexto !important;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 0.2rem rgba(212, 193, 255, 0.55);
+  }
+}

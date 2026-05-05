@@ -1,6 +1,6 @@
-# To Do List – Actividad 1 (React Bootstrap + SASS)
+# To Do List – Desarrollo Web
 
-Aplicación web de maquetación para el control de **tareas y metas** personales, con diseño **responsive** usando **React**, **Vite**, **React Bootstrap** y **SASS**.
+Aplicación para control de **tareas y metas** personales con **React**, **Vite**, **React Bootstrap**, **SASS** y estado global con **Zustand** (rama `semana-2`). La rama `semana-1` contiene solo la maquetación inicial.
 
 ## Requisitos
 
@@ -12,9 +12,11 @@ Aplicación web de maquetación para el control de **tareas y metas** personales
 ```bash
 git clone https://github.com/Ottogt/Desarrollo-web.git
 cd Desarrollo-web
-git checkout semana-1
+git checkout semana-2
 npm install
 ```
+
+Para revisar únicamente la actividad de maquetación (semana 1): `git checkout semana-1`.
 
 ## Ejecutar en desarrollo
 
@@ -31,18 +33,24 @@ npm run build
 npm run preview
 ```
 
-El comando `preview` sirve localmente la carpeta `dist/` generada por `build`.
+## Semana 2 – Estado global (Zustand)
+
+- **Stores:** `src/store/taskStore.ts`, `goalStore.ts`, `menuStore.ts` (con Redux DevTools / Zustand middleware `devtools`).
+- **Tipos:** `src/types/entities.ts` (`Task` / `Goal`: `id`, `name`, `description`, `dueDate`).
+- Agregar y eliminar tareas/metas desde la UI; los datos **no persisten** al recargar la página (sin backend ni `localStorage`).
+- Opcional: instalar la extensión **Redux DevTools** en Chrome para inspeccionar los stores en desarrollo.
 
 ## Estructura relevante
 
-- `src/App.tsx` – Layout principal: navbar, columnas, modal móvil
+- `src/App.tsx` – Layout, carga inicial de datos, listado según menú (Tareas / Metas)
 - `src/components/` – `Menu`, `Form`, `Item`, `AddMobileButton`
-- `src/styles/_variables.scss` – Variables de color (SASS)
+- `src/store/` – stores Zustand
+- `src/styles/` – variables SASS y botón lavanda
 
 ## Repositorio
 
-Código en GitHub: [Ottogt/Desarrollo-web](https://github.com/Ottogt/Desarrollo-web) — rama **`semana-1`** (actividad semana 1).
+[Ottogt/Desarrollo-web](https://github.com/Ottogt/Desarrollo-web) — rama **`semana-2`** (actividad semana 2: React + estado global).
 
 ## Entrega
 
-Este proyecto corresponde a la **Semana 1** (maquetación). Entrega el **enlace al repositorio público** según indique tu curso.
+Según indique tu curso: enlace al repositorio y/o plataforma; usar la rama **`semana-2`** para la entrega de la segunda actividad.

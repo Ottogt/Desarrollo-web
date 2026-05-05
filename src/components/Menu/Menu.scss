@@ -1,5 +1,18 @@
 @use '../../styles/variables' as *;
 
 .app-navbar {
-  background-color: $colorSecundario !important;
+  background-color: $colorNavbar !important;
+
+  .nav-link {
+    color: #fff !important;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+  }
+}
+
+.app-navbar__brand {
+  color: #fff !important;
+  font-weight: 700;
 }

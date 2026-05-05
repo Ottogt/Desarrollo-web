@@ -1,35 +1,46 @@
 @use '../../styles/variables' as *;
 
 .item-card {
-  background-color: $colorPrimario !important;
-  margin-top: 30px;
+  background-color: $colorCardMeta !important;
+  border: 1px solid $colorBordeCard !important;
+  border-radius: 0.375rem;
+  margin-top: 1rem;
   text-align: center;
 
-  .card-title {
-    color: #212529;
+  &:first-child {
+    margin-top: 0;
   }
 
-  .card-text {
-    color: #212529;
+  .card-body {
+    padding: 1.25rem;
   }
+}
 
-  .item-date {
-    font-size: 0.9rem;
+.item-card__title {
+  color: $colorTexto;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.item-card__label {
+  color: $colorTexto;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.item-card__value {
+  color: $colorTexto;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+
+  &--date {
     margin-bottom: 1rem;
   }
 }
 
 .item-delete-btn {
   width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-  color: #000 !important;
-  border-color: $colorTerciario !important;
-  background-color: transparent !important;
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.05) !important;
-    color: #000 !important;
-    border-color: $colorTerciario !important;
-  }
+  margin-top: 0.25rem;
+  border-radius: 0.375rem;
 }

@@ -9,9 +9,8 @@ export interface AddMobileButtonProps {
 export default function AddMobileButton({ onClick, className }: AddMobileButtonProps) {
   return (
     <Button
-      variant="success"
       type="button"
-      className={`add-mobile-btn ${className ?? ''}`}
+      className={`add-mobile-btn btn-lavender ${className ?? ''}`}
       onClick={onClick}
       aria-label="Agregar tarea"
     >
